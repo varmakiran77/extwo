@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>checkbox_rule</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(  option__c  = true &lt;&gt;  option2__c = false ||  option__c  = false &lt;&gt;  option2__c =true)</errorConditionFormula>
+    <errorDisplayField>option__c</errorDisplayField>
+    <errorMessage>only one selction</errorMessage>
+</ValidationRule>
